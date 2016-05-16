@@ -9,7 +9,7 @@
 
 ## 数据流向示意图
 
-![高级应用数据流向](https://github.com/HuanTeng/huanteng.github.io/tree/master/images/高级应用数据流向.png)
+![高级应用数据流向](https://github.com/HuanTeng/huanteng.github.io/blob/master/images/高级应用数据流向.png)
 
 ## 相关资料
 
