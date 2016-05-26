@@ -91,11 +91,11 @@ scope=read_user+write_user+monitor_user
 curl示例
 
 ```
-curl -X POST --form client_id=700e2f045584698603bdb92a6b6d5fce9eadd772c4555012121000c8938e2301 \
---form client_secret=397acfb8065b1f885958356acd0a98fe77115bdaaebf24c4a7ecd275380e8830 \
---form redirect_uri=urn:ietf:wg:oauth:2.0:oob \
---form grant_type=authorization_code \
---form code=9eeaa04ed7dd538840e17bef0e9bea2dddc928ec14f288cb03d5842cb2aa8e8c \
+curl -X POST --data client_id=700e2f045584698603bdb92a6b6d5fce9eadd772c4555012121000c8938e2301 \
+--data client_secret=397acfb8065b1f885958356acd0a98fe77115bdaaebf24c4a7ecd275380e8830 \
+--data redirect_uri=urn:ietf:wg:oauth:2.0:oob \
+--data grant_type=authorization_code \
+--data code=9eeaa04ed7dd538840e17bef0e9bea2dddc928ec14f288cb03d5842cb2aa8e8c \
 https://huantengsmart.com/oauth2/token
 
 ```
@@ -141,8 +141,8 @@ curl示例
 ```
 curl -X POST --header "Authorization: bearer 26c115b6be971cfdd11297a00697e200fa011a959ca0fa8582fdf4b36108f6f2" \
 --header "Accept: application/json" \
---form grant_type=refresh_token \
---form refresh_token=d216c76ce5e9a8fd56f019b2683521ca24ae7a66bdf707b427e36b88f2a1bd3e \
+--data grant_type=refresh_token \
+--data refresh_token=d216c76ce5e9a8fd56f019b2683521ca24ae7a66bdf707b427e36b88f2a1bd3e \
 https://huantengsmart.com/oauth2/token
 ```
 
