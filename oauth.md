@@ -139,10 +139,10 @@ https://huantengsmart.com/api/bulb.json
 curl示例
 
 ```
-curl -X POST --header "Authorization: bearer 26c115b6be971cfdd11297a00697e200fa011a959ca0fa8582fdf4b36108f6f2" \
+curl -X POST --header "Authorization: bearer ecf7766ab04b9f27345627123f58af243d2b6bbaad19d04f3a535241c2a585a2" \
 --header "Accept: application/json" \
 --data grant_type=refresh_token \
---data refresh_token=d216c76ce5e9a8fd56f019b2683521ca24ae7a66bdf707b427e36b88f2a1bd3e \
+--data refresh_token=9c5a0ad392cfbca9c1ed41e34dd84baba84d8ba19e25bcc5b4def1ca03f64c4f \
 https://huantengsmart.com/oauth2/token
 ```
 
@@ -164,6 +164,6 @@ curl示例
 ```
 curl -X POST --header "Authorization: bearer 9b60ce452d1360b5ca734a28faf76b6a4b2eb921551ee6f8c836afca6120eca1" \
 --header "Accept: application/json" \
---form token=9b60ce452d1360b5ca734a28faf76b6a4b2eb921551ee6f8c836afca6120eca1 \
+--data token=9b60ce452d1360b5ca734a28faf76b6a4b2eb921551ee6f8c836afca6120eca1 \
 https://huantengsmart.com/oauth2/revoke
 ```
