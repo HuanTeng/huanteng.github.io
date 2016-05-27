@@ -70,7 +70,7 @@ Q:我创建了应用要如何接收推送信息，推送信息的格式是什么
 		}
 	}
 	```
-	`content` 中的内容会根据不同的设备有略微的不同
+	`content` 中的内容会根据不同的设备有略微的不同,具体设备的推送格式请参见[推送格式文档](https://github.com/HuanTeng/huanteng.github.io/blob/master/notification_type.md)
 
 ```
 Q:推送信息为什么会有延迟
