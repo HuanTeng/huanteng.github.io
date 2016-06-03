@@ -3,7 +3,7 @@
 * Send POST 以换取Access Token为例
 
 ```
-		/*
+    /*
      * Function  :   发送Post请求到服务器
      * Param     :   params参数，encode编码格式
      */
@@ -33,8 +33,8 @@
             e.printStackTrace();
         }
     }
-		/*
-		 * Function  :   封装请求体信息
+    /*
+     * Function  :   封装请求体信息
      * Param     :   params请求体内容，encode编码格式
      */
     public static StringBuffer getRequestData(Map<String, String> params, String encode) {
@@ -57,7 +57,7 @@
 * Send GET 以获取授权为例
 
 ```
-	/*
+    /*
      * Function  :   发送Get请求到服务器
      * Param     :   params参数，encode编码格式
      */
