@@ -130,3 +130,17 @@
   }
 }
 ```
+
+
+`用户离家回家`
+
+```
+{
+  "type": "UserEvent-v1-#{user.user_uniq_id}",
+  "content": {
+    "user_uniq_id": xx,
+    "event": enum["back", "leave"],
+    "distance": distance(int)
+  }
+}
+```
