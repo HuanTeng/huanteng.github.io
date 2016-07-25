@@ -2,16 +2,12 @@
 
 ```
 {
-  "type": "DoorSensorsChanged-v2-1462353745",
-  "content": {
-    "door_sensor_id": 1126,
-    "is_open": false,
-    "alert_mode": 0,
-    "alert_status": 1,
-    "behaviors": [{
-      "action": "close",
-      "timestamp": 1462934721000
-    }]
+  type: "DoorSensorsChanged-v1-#{u.user_uniq_id}",
+  content: {
+    door_sensor_id: ,
+    alert_status: ,
+    alert_mode: ,
+    is_open:
   }
 }
 ```
@@ -20,11 +16,11 @@
 
 ```
 {
-  "type": "IoDetectorChanged-v1-#{user.user_uniq_id}",
-  "content": {
-    "device_identifier": "K1",
-    "io_detector_id": 1,
-    "state": true
+  type: "IoDetectorChanged-v1-#{user.user_uniq_id}",
+  content: {
+    device_identifier: ,
+    io_detector_id: ,
+    state:
   }
 }
 ```
@@ -33,12 +29,12 @@
 
 ```
 {
-  "type": "DeviceConnectivity-v1-#{u.user_uniq_id}",
-  "content": {
-      "device_identifier": "B293",
-      "connectivity_string": "离线",
-      "reason": "",
-      "connectivity": 2
+  type: "DeviceConnectivity-v1-#{u.user_uniq_id}",
+  content: {
+      device_identifier: ,
+      connectivity_string: ,
+      reason: ,
+      connectivity:
   }
 }
 ```
@@ -47,16 +43,16 @@
 
 ```
 {
-  "type": "BulbsChanged-v2-#{u.user_uniq_id}",
-  "content": {
-      "device_identifier": "B293",
-      "bulb_id: 2491,
-      "wall_switch_id": 83,
-      "channel": 1
-      "hue": 0.0,
-      "brightness": 0.0,
-      "turned_on": false,
-      "script_end_time":
+  type: "BulbsChanged-v2-#{u.user_uniq_id}",
+  content: {
+    device_identifier: ,
+    bulb_id: ,
+    wall_switch_id: ,
+    channel: ,
+    hue: ,
+    brightness: ,
+    turned_on: ,
+    script_end_time:
   }
 }
 ```
@@ -65,18 +61,14 @@
 
 ```
 {
-  "type": "InfraredSensorsChanged-v1-#{u.user_uniq_id}",
-  "content": {
-      "infrared_sensor_id": 1,
-      "channel": 7,
-      "active": ,
-      "time": ,
-      "cfg_parameters_7": {
-        "wait": 600,
-        "ratio": 4,
-        "count": 2
-      },
-      "version": 0
+  type: "InfraredSensorsChanged-v1-#{u.user_uniq_id}",
+  content: {
+    infrared_sensor_id: ,
+    channel: ,
+    active: ,
+    time: ,
+    cfg_parameters_7: ,
+    version:
   }
 }
 ```
@@ -85,9 +77,9 @@
 
 ```
 {
-  "type": "SwitchesChanged-v1-#{u.user_uniq_id}",
-  "content": {
-    "switch_id": 118
+  type: "SwitchesChanged-v1-#{u.user_uniq_id}",
+  content: {
+    switch_id:
   }
 }
 ```
@@ -96,11 +88,11 @@
 
 ```
 {
-  "type": "WallSwitchPressed-v1-#{u.user_uniq_id}",
-  "content": {
-    "type": ,
-    "channel": ,
-    "switch_id":
+  type: "WallSwitchPressed-v1-#{u.user_uniq_id}",
+  content: {
+    type: ,
+    channel: ,
+    switch_id:
   }
 }
 ```
@@ -109,24 +101,58 @@
 
 ```
 {
-  "type": "SwitchPressed-v1-#{u.user_uniq_id}",
-  "content": {
-    "type": ,
-    "switch_id":
+  type: "SwitchPressed-v1-#{u.user_uniq_id}",
+  content: {
+    type: ,
+    switch_id:
   }
 }
 ```
 
-`墙壁开关`
+`墙壁开关发生变化`
 
 ```
 {
-  "type": "WallSwitchesChanged-v1-#{u.user_uniq_id}",
-  "content": {
-    "wall_switch_id": ,
-    "device_identifier":,
-    "status": ,
-    "change_mask":
+  type: "WallSwitchesChanged-v1-#{u.user_uniq_id}",
+  content: {
+    wall_switch_id: ,
+    device_identifier: ,
+    status: ,
+    change_mask:
   }
+}
+```
+
+`创建灯组`
+
+```
+{
+  type: "GroupCreated-v1-#{user.user_uniq_id}",
+  content: {
+      group_id: ,
+      bulb_ids:
+  }
+}
+```
+
+`安防模式变化`
+
+```
+{
+  type: "SecurityPatternsChanged-v1-#{u.user_uniq_id}",
+  content: {
+    id: ,
+    state: ,
+    state_summary: ,
+  }
+}
+```
+
+`通用模块发生变化`
+
+```
+{
+  type: ,
+  content:
 }
 ```
