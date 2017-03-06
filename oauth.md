@@ -60,7 +60,7 @@ scope=read_user+write_user+monitor_user
 
   * client_id：在第一步中获取
   * client_secret：在第一步中获取
-  * redirect_uri：一定要用 urlencode 编码
+  * redirect_uri：不需要 urlencode 编码
   * grant_type: 填写 `authorization_code`
   * code：在请求用户授权时获取的 `authorize code`
 
